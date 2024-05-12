@@ -1,0 +1,31 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class UserTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        User::create([
+            'first_name' => 'Robin',
+            'last_name' => 'Rana',
+            'email' => 'robin@example.com',
+            'phone_number' =>'9878765654',
+        ]);
+
+        User::create([
+            'first_name' => 'Rohit',
+            'last_name' => 'Kumar',
+            'email' => 'rohit@example.com',
+            'phone_number' =>'9876343322',
+        ]);
+    }
+}
